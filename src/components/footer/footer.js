@@ -12,14 +12,28 @@ const Footer = () => {
             {socialLinks.map((link) => {
               return (
                 <FooterContent>
-                  <SocialIcon style={SocialIconStyle} url={link} />
+                  <SocialIcon
+                    className="shadow"
+                    style={SocialIconStyle}
+                    url={link}
+                  />
                 </FooterContent>
               );
             })}
           </FooterContainer>
         </Rotate>
         <Flip bottom>
-          <Copyright className="text-center">Inspired From Linktree</Copyright>
+          <Copyright
+            onClick={() => {
+              window.open(
+                "https://github.com/vigneshshettyin/Linktree",
+                "_blank"
+              );
+            }}
+            className="text-center"
+          >
+            Inspired From Linktree
+          </Copyright>
         </Flip>
       </div>
     </>
@@ -31,6 +45,8 @@ export default Footer;
 const SocialIconStyle = {
   width: "30px",
   height: "30px",
+  borderRadius: "50%",
+  backgroundColor: "white",
 };
 
 const FooterContainer = styled.div`

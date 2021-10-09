@@ -1,6 +1,8 @@
 import { Bounce } from "react-reveal";
 import styled from "styled-components";
 import { linkData, themeData } from "../../data/data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const Link = () => {
   return (
     <>
@@ -15,7 +17,12 @@ const Link = () => {
               }}
               key={index}
             >
-              <img src={item.image} alt="my_profile_image" />
+              <LazyLoadImage
+                id="image"
+                effect="blur"
+                src={item.image}
+                alt="my_profile_image"
+              />
               <p className="text-center">{item.name}</p>
             </CustomDiv>
           ))}
@@ -43,6 +50,7 @@ const CustomDiv = styled.div`
   }
   @media (max-width: 768px) {
     width: 90vw;
+    text-align: center;
   }
   :hover {
     background-color: ${(props) => props.props.backgroundColor};
@@ -51,10 +59,10 @@ const CustomDiv = styled.div`
   p {
     flex: 1;
   }
-  img {
+  #image {
     background-color: white;
     :hover {
-      transform: scale(4);
+      transform: scale(2);
     }
     margin-left: 10px;
     max-width: 60px;
