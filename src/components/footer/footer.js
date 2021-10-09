@@ -1,31 +1,21 @@
 import styled from "styled-components";
 import { SocialIcon } from "react-social-icons";
 import { Flip, Rotate } from "react-reveal";
-
+import { socialLinks } from "../../data/data";
 const Footer = () => {
   return (
     <>
       <div className="bottom">
+        <hr />
         <Rotate bottom>
           <FooterContainer>
-            <FooterContent>
-              <SocialIcon
-                style={SocialIconStyle}
-                url="https://www.linkedin.com"
-              />
-            </FooterContent>
-            <FooterContent>
-              <SocialIcon
-                style={SocialIconStyle}
-                url="https://www.instagram.com"
-              />
-            </FooterContent>
-            <FooterContent>
-              <SocialIcon
-                style={SocialIconStyle}
-                url="https://www.github.com"
-              />
-            </FooterContent>
+            {socialLinks.map((link) => {
+              return (
+                <FooterContent>
+                  <SocialIcon style={SocialIconStyle} url={link} />
+                </FooterContent>
+              );
+            })}
           </FooterContainer>
         </Rotate>
         <Flip bottom>

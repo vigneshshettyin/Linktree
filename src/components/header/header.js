@@ -1,13 +1,17 @@
 import styled from "styled-components";
 import { Zoom } from "react-reveal";
+import { profileData, themeData } from "../../data/data";
 
 const Header = () => {
+  const { userName, photoLink } = profileData;
+  document.body.style.backgroundColor = themeData.backgroundColor;
+  document.body.style.color = themeData.textColor;
   return (
     <>
       <Zoom>
         <HeaderWrapper>
-          <CustomImage src="https://github.com/vigneshshettyin.png" />
-          <UserNameText>@vigneshshettyin</UserNameText>
+          <CustomImage src={photoLink} />
+          <UserNameText>@{userName}</UserNameText>
         </HeaderWrapper>
       </Zoom>
     </>
