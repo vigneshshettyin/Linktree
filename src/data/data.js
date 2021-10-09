@@ -49,8 +49,8 @@ const linkData = [
   },
   {
     id: 5,
-    link: "https://testla.vigneshcodes.in",
-    name: "Testla UI Clone Using ReactJS",
+    link: "https://tesla.vigneshcodes.in",
+    name: "Tesla UI Clone Using ReactJS",
     image: "https://tesla.vigneshcodes.in/images/logo.svg",
   },
   {
