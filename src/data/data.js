@@ -1,6 +1,6 @@
 const socialLinks = [
   "https://github.com/vigneshshettyin",
-  "https://linkedin.com/vigneshshettyin",
+  "https://linkedin.com/in/vigneshshettyin",
   "https://twitter.com/vigneshshettyin",
   "https://instagram.com/vigneshshettyin",
   "https://facebook.com/vigneshshettyin",

@@ -74,10 +74,10 @@ const FooterContent = styled.div`
 `;
 
 const Copyright = styled.p`
-  font-family: "Pacifico", cursive !important;
+  font-weight: 100;
   color: ${(props) => props.props.footerColor};
   :hover {
     transform: scale(1.1);
-    text-shadow: 5px 5px 5px #000;
+    cursor: pointer;
   }
 `;
