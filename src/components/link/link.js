@@ -43,6 +43,7 @@ const CustomDiv = styled.div`
   border-radius: 5px;
   cursor: pointer;
   align-items: center;
+  justify-content: center;
   width: 50vw;
   padding: 5px;
   background-color: ${(props) => props.props.cardBackgroundColor};
