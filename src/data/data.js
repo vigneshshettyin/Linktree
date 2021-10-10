@@ -12,11 +12,24 @@ const profileData = {
 };
 
 const themeData = {
-  backgroundColor: "#9cdbfb",
-  textColor: "#212121",
-  linkColor: "#212121",
-  linkHoverColor: "yellow",
-  linkHoverTextColor: "white",
+  light: {
+    backgroundColor: "#9cdbfb",
+    onHoverBackgroundColor: "#9cdbfb",
+    cardBackgroundColor: "#ffffff",
+    onHoverTextColor: "white",
+    footerColor: "black",
+    footerSocialLinkColor: "white",
+    headerFontColor: "black",
+  },
+  dark: {
+    backgroundColor: "#0e1b40",
+    onHoverBackgroundColor: "#032486",
+    cardBackgroundColor: "white",
+    onHoverTextColor: "white",
+    footerColor: "white",
+    footerSocialLinkColor: "white",
+    headerFontColor: "white",
+  },
 };
 const linkData = [
   {
