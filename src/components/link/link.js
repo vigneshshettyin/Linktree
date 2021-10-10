@@ -2,8 +2,12 @@ import { Bounce } from "react-reveal";
 import styled from "styled-components";
 import { linkData, themeData } from "../../data/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useContext } from "react";
+import themeContext from "../../state/context/themeContext";
 import "react-lazy-load-image-component/src/effects/blur.css";
 const Link = () => {
+  const a = useContext(themeContext);
+
   return (
     <>
       <Bounce>
@@ -11,7 +15,7 @@ const Link = () => {
           {linkData.map((item, index) => (
             <CustomDiv
               className="shadow"
-              props={themeData}
+              props={a.darkMode ? themeData.light : themeData.dark}
               onClick={() => {
                 window.open(item.link, "_blank");
               }}
@@ -41,7 +45,7 @@ const CustomDiv = styled.div`
   align-items: center;
   width: 50vw;
   padding: 5px;
-  background-color: white;
+  background-color: ${(props) => props.props.cardBackgroundColor};
   display: flex;
   border: 2px solid white;
   height: max-content;
@@ -53,8 +57,8 @@ const CustomDiv = styled.div`
     text-align: center;
   }
   :hover {
-    background-color: ${(props) => props.props.backgroundColor};
-    color: ${(props) => props.props.linkHoverTextColor};
+    background-color: ${(props) => props.props.onHoverBackgroundColor};
+    color: ${(props) => props.props.onHoverTextColor};
   }
   p {
     flex: 1;
