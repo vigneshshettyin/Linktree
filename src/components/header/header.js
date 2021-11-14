@@ -52,12 +52,9 @@ const CustomImage = styled(LazyLoadImage)`
   width: 100px;
   height: 100px;
   margin: 5px;
-  :hover {
-    margin-top: 50px;
-    transform: scale(2);
-  }
 `;
 
 const UserNameText = styled.h6`
   color: ${(props) => props.props.headerFontColor};
+  font-weight: bold;
 `;
