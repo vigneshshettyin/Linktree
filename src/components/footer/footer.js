@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { SocialIcon } from "react-social-icons";
-import { Flip, Rotate } from "react-reveal";
 import { socialLinks, themeData } from "../../data/data";
 import themeContext from "../../state/context/themeContext";
 import { useContext } from "react";
@@ -23,35 +22,19 @@ const Footer = () => {
     <>
       <div className="bottom">
         <hr />
-        <Rotate bottom>
-          <FooterContainer>
-            {socialLinks.map((link, index) => {
-              return (
-                <FooterContent key={index}>
-                  <SocialIcon
-                    className="shadow"
-                    style={SocialIconStyle}
-                    url={link}
-                  />
-                </FooterContent>
-              );
-            })}
-          </FooterContainer>
-        </Rotate>
-        <Flip bottom>
-          <Copyright
-            props={a.darkMode ? themeData.light : themeData.dark}
-            onClick={() => {
-              window.open(
-                "https://github.com/vigneshshettyin/Linktree",
-                "_blank"
-              );
-            }}
-            className="text-center"
-          >
-            Inspired From Linktree
-          </Copyright>
-        </Flip>
+        <FooterContainer>
+          {socialLinks.map((link, index) => {
+            return (
+              <FooterContent key={index}>
+                <SocialIcon
+                  className="shadow"
+                  style={SocialIconStyle}
+                  url={link}
+                />
+              </FooterContent>
+            );
+          })}
+        </FooterContainer>
       </div>
     </>
   );
@@ -62,6 +45,7 @@ export default Footer;
 const FooterContainer = styled.div`
   width: 100vw;
   display: flex;
+  margin-bottom: 10px;
   align-items: center;
   justify-content: center;
 `;
@@ -70,14 +54,5 @@ const FooterContent = styled.div`
   margin: 5px;
   :hover {
     transform: scale(1.1);
-  }
-`;
-
-const Copyright = styled.p`
-  font-weight: 100;
-  color: ${(props) => props.props.footerColor};
-  :hover {
-    transform: scale(1.1);
-    cursor: pointer;
   }
 `;

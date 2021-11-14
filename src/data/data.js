@@ -5,7 +5,6 @@ const socialLinks = [
   "https://instagram.com/vigneshshettyin",
   "https://facebook.com/vigneshshettyin",
 ];
-
 const profileData = {
   userName: "vigneshshettyin",
   photoLink: "https://github.com/vigneshshettyin.png",
@@ -13,18 +12,19 @@ const profileData = {
 
 const themeData = {
   light: {
-    backgroundColor: "#9cdbfb",
-    onHoverBackgroundColor: "#9cdbfb",
+    backgroundColor: "white",
+    onHoverBackgroundColor: "#dfe6e9",
     cardBackgroundColor: "#ffffff",
-    onHoverTextColor: "white",
+    onHoverTextColor: "#636e72",
     footerColor: "black",
     footerSocialLinkColor: "white",
-    headerFontColor: "black",
+    headerFontColor: "#74b9ff",
+    CardtextColor: "#2d3436",
   },
   dark: {
-    backgroundColor: "#0e1b40",
-    onHoverBackgroundColor: "#032486",
-    cardBackgroundColor: "white",
+    backgroundColor: "#161b22",
+    onHoverBackgroundColor: "#02040a",
+    cardBackgroundColor: "#636e72",
     onHoverTextColor: "white",
     footerColor: "white",
     footerSocialLinkColor: "white",

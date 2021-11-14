@@ -40,9 +40,10 @@ export default Link;
 
 const CustomDiv = styled.div`
   margin-bottom: 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   align-items: center;
+
   justify-content: center;
   width: 50vw;
   padding: 5px;
@@ -50,8 +51,9 @@ const CustomDiv = styled.div`
   display: flex;
   border: 2px solid white;
   height: max-content;
+  color: ${(props) => props.props.CardtextColor};
   p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   @media (max-width: 768px) {
     width: 90vw;
@@ -60,15 +62,14 @@ const CustomDiv = styled.div`
   :hover {
     background-color: ${(props) => props.props.onHoverBackgroundColor};
     color: ${(props) => props.props.onHoverTextColor};
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
   }
   p {
     flex: 1;
   }
   #image {
     background-color: white;
-    :hover {
-      transform: scale(2);
-    }
     margin-left: 10px;
     max-width: 60px;
     max-height: 60px;
