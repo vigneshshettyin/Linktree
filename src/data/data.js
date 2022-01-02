@@ -8,7 +8,7 @@ const socialLinks = [
 const profileData = {
   userName: "vigneshshettyin",
   photoLink: "https://github.com/vigneshshettyin.png",
-  desc: "Teach Geek | Mentor @ DeltaSJEC",
+  desc: "Tech Geek | Mentor @ DeltaSJEC",
 };
 
 const themeData = {
@@ -37,14 +37,14 @@ const linkData = [
   {
     id: 1,
     link: "https://go.vigneshcodes.in/meetly",
-    name: "Meetly - Free Video Conferencing App",
+    name: "Meetly - Conferencing App",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },
   {
     id: 2,
     link: "https://go.vigneshcodes.in/certify",
-    name: "Certify - Free Online Certification App",
+    name: "Certify - Certification App",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },
@@ -72,14 +72,14 @@ const linkData = [
   {
     id: 6,
     link: "https://webscraper.vigneshin.ml/",
-    name: "WebScraper - Free S.E.O Scrapper / API",
+    name: "Free S.E.O Scrapper / API",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },
   {
     id: 7,
     link: "https://react-blog.vigneshcodes.in",
-    name: "Free Blogging Application (MERN STACK)",
+    name: "Free Blogging Application",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },
@@ -93,14 +93,14 @@ const linkData = [
   {
     id: 9,
     link: "https://react-opensource.vigneshcodes.in/",
-    name: "Open Source React (Promote Open Source Contributions)",
+    name: "Open-Source React",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },
   {
     id: 10,
     link: "https://linktree.vigneshcodes.in",
-    name: "LinkTree (Clone) - Display Links Uniquely ",
+    name: "Display Links Uniquely ",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },
