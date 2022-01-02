@@ -8,7 +8,7 @@ const socialLinks = [
 const profileData = {
   userName: "vigneshshettyin",
   photoLink: "https://github.com/vigneshshettyin.png",
-  desc: " Full-Stack | Python | React | Kotlin | JavaScript | Node.js",
+  desc: "Teach Geek | Mentor @ DeltaSJEC",
 };
 
 const themeData = {
@@ -86,7 +86,7 @@ const linkData = [
   {
     id: 8,
     link: "https://blog.vigneshin.ml",
-    name: "Free Blogging Application (Flask)",
+    name: "Free Blogging Application",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },
@@ -107,7 +107,7 @@ const linkData = [
   {
     id: 11,
     link: "https://blog.vigneshcodes.in/quick-guide-to-deploy-using-docker",
-    name: "Quick Guide To Deploy Using Docker (Blog)",
+    name: "Quick Guide To Deploy Using Docker",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },

@@ -24,7 +24,7 @@ const Link = () => {
               <LazyLoadImage
                 id="image"
                 effect="blur"
-                src={item.image}
+                src={`https://ui-avatars.com/api/?rounded=true&name=${item.name}&background=random`}
                 alt="my_profile_image"
               />
               <p className="text-center">{item.name}</p>
@@ -45,16 +45,12 @@ const CustomDiv = styled.div`
   align-content: center;
   align-items: baseline;
   justify-content: center;
-  width: 50vw;
+  width: 40vw;
   padding: 5px;
   background-color: ${(props) => props.props.cardBackgroundColor};
   display: flex;
-  border: 2px solid white;
   height: max-content;
   color: ${(props) => props.props.CardtextColor};
-  p {
-    font-size: 1rem;
-  }
   @media (max-width: 768px) {
     width: 90vw;
     text-align: center;

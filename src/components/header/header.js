@@ -60,4 +60,5 @@ const CustomImage = styled(LazyLoadImage)`
 const UserNameText = styled.h6`
   color: ${(props) => props.props.headerFontColor};
   font-weight: bold;
+  text-align: center;
 `;
