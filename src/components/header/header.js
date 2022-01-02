@@ -9,7 +9,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Header = () => {
   const a = useContext(themeContext);
-  const { userName, photoLink } = profileData;
+  const { userName, photoLink, desc } = profileData;
   if (!a.darkMode) {
     document.body.style.backgroundColor = themeData.dark.backgroundColor;
   } else {
@@ -24,6 +24,9 @@ const Header = () => {
           <CustomImage effect="blur" src={photoLink} />
           <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
             @{userName}
+          </UserNameText>
+          <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
+            {desc}
           </UserNameText>
         </HeaderWrapper>
       </Zoom>

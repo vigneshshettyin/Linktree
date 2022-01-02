@@ -42,8 +42,8 @@ const CustomDiv = styled.div`
   margin-bottom: 15px;
   border-radius: 15px;
   cursor: pointer;
-  align-items: center;
-
+  align-content: center;
+  align-items: baseline;
   justify-content: center;
   width: 50vw;
   padding: 5px;
@@ -69,11 +69,9 @@ const CustomDiv = styled.div`
     flex: 1;
   }
   #image {
-    background-color: white;
     margin-left: 10px;
-    max-width: 60px;
-    max-height: 60px;
-    border-radius: 2px;
+    width: 50px;
+    height: 50px;
   }
 `;
 
