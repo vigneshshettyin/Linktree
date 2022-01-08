@@ -111,6 +111,13 @@ const linkData = [
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
   },
+    {
+    id: 12,
+    link: "https://blog.vigneshcodes.in/create-linktree-clone",
+    name: "Create Linktree Clone",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
 ];
 
 export { socialLinks, profileData, linkData, themeData };
