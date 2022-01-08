@@ -1,70 +1,199 @@
-# Getting Started with Create React App
+![W1pVACsPZ](https://user-images.githubusercontent.com/77713888/148638710-3512fb8a-1858-4580-9c68-d7ca33d146eb.jpg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Create Linktree Clone
+### Using React, Styled-Components also with amazing dark mode toggle!
 
-## Available Scripts
+Do first, understand later. That is the approach here. If you are new to some of these technologies, don’t worry about it. Just follow along, and dive into topics afterward.
 
-In the project directory, you can run:
+**In this guide, we will:**
 
-### `yarn start`
+- Forking a github repository.
+- Modifying content and pushing code.
+- Auto deploy to Cloudflare pages.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**What you will need:**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.JS is installed on your local machine. (https://nodejs.org/en/download/)
+- Yarn installed on your local system. (https://yarnpkg.com/)
+- An Github account. (sign up for free http://github.com/)
+- A Cloudflare account with a domain registered. (https://www.cloudflare.com/)
 
-### `yarn test`
+**Introduction**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Nowadays web applications like  [Linktree](https://linktr.ee/) are used by developers to showcase their social, project links. Today let's see how to create our custom Linktree by below easy 3 steps. Let's dive in...
 
-### `yarn build`
+**Forking Github Repository**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Linktree Template](https://github.com/vigneshshettyin/Linktree) this is a link to my Linktree Clone repository which was developed using React, Styled-Components. We can even use Next JS instead of React for better Search Engine Optimizing and better search indexing.  [LinkFree](https://github.com/DELTA-SJEC/LinkFree) this is a link to the Linktree Clone which was developed using Next JS. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ [Linktree Clone - Live Link ](https://linktree-aww.pages.dev/) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ [Linkfree Clone - Live Link](https://link-free-delta-sjec.vercel.app/) 
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Group 21.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641618205491/6OD9twoTc.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you already have a github directly login or create a new github account then head over to the Linktree Clone repository link then clone as shown in the above image. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Updating Github Repository**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Once you have cloned the repository to your github account then press dot or create new codespaces as shown in the below image. 
 
-## Learn More
+![Group 21.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641619034986/vJrGG8PBp.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will open the current repository in a web view visual studio code. Now find the src/data/data.js file. That file will almost like this 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Group 23.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641619377254/zI00ARzOG.png)
 
-### Code Splitting
+```
+const socialLinks = [
+  "https://github.com/vigneshshettyin",
+  "https://linkedin.com/in/vigneshshettyin",
+  "https://twitter.com/vigneshshettyin",
+  "https://instagram.com/vigneshshettyin",
+  "https://facebook.com/vigneshshettyin",
+];
+const profileData = {
+  userName: "vigneshshettyin",
+  photoLink: "https://github.com/vigneshshettyin.png",
+  desc: "Tech Geek | Mentor @ DeltaSJEC",
+};
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+const themeData = {
+  light: {
+    backgroundColor: "white",
+    onHoverBackgroundColor: "#dfe6e9",
+    cardBackgroundColor: "#ffffff",
+    onHoverTextColor: "#636e72",
+    footerColor: "black",
+    footerSocialLinkColor: "white",
+    headerFontColor: "#black",
+    CardtextColor: "#2d3436",
+  },
+  dark: {
+    backgroundColor: "#000000",
+    onHoverBackgroundColor: "#02040a",
+    cardBackgroundColor: "#222222",
+    onHoverTextColor: "white",
+    footerColor: "white",
+    footerSocialLinkColor: "white",
+    headerFontColor: "white",
+    CardtextColor: "white",
+  },
+};
+const linkData = [
+  {
+    id: 1,
+    link: "https://go.vigneshcodes.in/meetly",
+    name: "Meetly - Conferencing App",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 2,
+    link: "https://go.vigneshcodes.in/certify",
+    name: "Certify - Certification App",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 3,
+    link: "https://eatmyurl.ml",
+    name: "EatMyUrl - Free URL Shortener",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 4,
+    link: "https://go.vigneshcodes.in/bulkmailer",
+    name: "BulkMailer - Free Bulk Mailer App",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 5,
+    link: "https://tesla.vigneshcodes.in",
+    name: "Tesla UI Clone Using ReactJS",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 6,
+    link: "https://webscraper.vigneshin.ml/",
+    name: "Free S.E.O Scrapper / API",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 7,
+    link: "https://react-blog.vigneshcodes.in",
+    name: "Free Blogging Application",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 8,
+    link: "https://blog.vigneshin.ml",
+    name: "Free Blogging Application",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 9,
+    link: "https://react-opensource.vigneshcodes.in/",
+    name: "Open-Source React",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 10,
+    link: "https://linktree.vigneshcodes.in",
+    name: "Display Links Uniquely ",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+  {
+    id: 11,
+    link: "https://blog.vigneshcodes.in/quick-guide-to-deploy-using-docker",
+    name: "Quick Guide To Deploy Using Docker",
+    image:
+      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+  },
+];
 
-### Analyzing the Bundle Size
+export { socialLinks, profileData, linkData, themeData };
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+``` 
 
-### Making a Progressive Web App
+Now, update the content as per your requirements. Once the data is updated the next step is to push the updated code to the current repository. Go to the source control section on the sidebar or press [Ctrl + Shift + G]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Group 24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641619937054/LcfT-xsf9C.png)
 
-### Advanced Configuration
+In Step - 1 we are writing a commit message. Step - 2 we are pushing the updated content to the current github repository. Now, if we check the Linktree Clone github repository our data will be updated. The next step is to host the site using Cloudflare Pages. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Deploy - Cloudflare Pages**
 
-### Deployment
+Head over to [Cloudflare Pages Website](https://pages.cloudflare.com/). Log in if you have already created a Cloudflare account or else sign up. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Group 25.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641620473283/6RLuZ1F-M.png)
 
-### `yarn build` fails to minify
+Click on create a project then there will be a pop-up to connect to GitHub or GitLab. Choose GitHub as we have already pushed the code to GitHub. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Group 26.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641620625923/zpAnGfblh.png)
+
+![Screenshot 2022-01-08 111432.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641620689170/ePijhqnRC.png)
+
+Once GitHub is connected to Cloudflare then change the setting as given in the above image. Now, our Linktree Clone repository is linked to the Cloudflare Pages project. 
+
+![Group 27.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641620884245/Xb2lD-ETv.png)
+
+![Group 28.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641621006588/8O_JJlq79.png)
+
+Update Build command & Build output directory accordingly as given in the above image then click on the save and deploy button which will start the deployment process. If Framework preset is selected as none by default change it to **Create React App**.  The deployment process may take around 4-5 minutes. 
+
+Hurray!! Now our  [Linktree Clone](https://linktree-aww.pages.dev/)  is auto deployed using Cloudflare Pages. If required you can link a custom domain by updating the CNAME record.  [Cloudflare Pages Docs](https://developers.cloudflare.com/pages/get-started)
+
+![Screenshot 2022-01-08 112823.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641621517468/tVxoBztjm.png)
+
+Cheers, <br/>
+Vignesh
