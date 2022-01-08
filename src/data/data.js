@@ -39,7 +39,7 @@ const linkData = [
     link: "https://go.vigneshcodes.in/meetly",
     name: "Meetly - Conferencing App",
     image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+      "https://github.com/vigneshshettyin.png",
   },
   {
     id: 2,
