@@ -85,7 +85,7 @@ const linkData = [
   },
   {
     id: 8,
-    link: "https://blog.vigneshin.ml",
+    link: "https://vignesh-blog.herokuapp.com",
     name: "Free Blogging Application",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
