@@ -50,7 +50,7 @@ const linkData = [
   },
   {
     id: 3,
-    link: "https://eatmyurl.ml",
+    link: "https://eurl.tech",
     name: "EatMyUrl - Free URL Shortener",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
@@ -64,7 +64,7 @@ const linkData = [
   },
   {
     id: 5,
-    link: "https://tesla.vigneshcodes.in",
+    link: "https://tesla-clone-6820b.web.app",
     name: "Tesla UI Clone Using ReactJS",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
@@ -78,7 +78,7 @@ const linkData = [
   },
   {
     id: 7,
-    link: "https://react-blog.vigneshcodes.in",
+    link: "https://fervent-cray-ead198.netlify.app",
     name: "Free Blogging Application",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
@@ -92,7 +92,7 @@ const linkData = [
   },
   {
     id: 9,
-    link: "https://react-opensource.vigneshcodes.in/",
+    link: "https://quizzical-pike-e7098a.netlify.app",
     name: "Open-Source React",
     image:
       "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
