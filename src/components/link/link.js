@@ -12,6 +12,7 @@ const Link = () => {
     <>
       <Bounce>
         <ParentWrapper>
+          console.log(process.env.REACT_APP_LINKS)
           {linkData.map((item, index) => (
             <CustomDiv
               className="shadow"

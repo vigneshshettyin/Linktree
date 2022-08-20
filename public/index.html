@@ -8,7 +8,10 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Hi, I'm a Web & App Developer, an Open Source Enthusiast who enjoys collaborating with others also makes stunningly professional web apps and Kotlin apps as a hobby." />
+    <meta
+      name="description"
+      content="Hi, I'm a Web & App Developer, an Open Source Enthusiast who enjoys collaborating with others also makes stunningly professional web apps and Kotlin apps as a hobby."
+    />
     <link
       rel="apple-touch-icon"
       href="https://res.cloudinary.com/vigneshshettyin/image/upload/v1641633273/loywlbq4tgduixnwpfws.png"
@@ -55,5 +58,29 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("worker.js")
+            .then(
+              function (registration) {
+                console.log(
+                  "Worker registration successful",
+                  registration.scope
+                );
+              },
+              function (err) {
+                console.log("Worker registration failed", err);
+              }
+            )
+            .catch(function (err) {
+              console.log(err);
+            });
+        });
+      } else {
+        console.log("Service Worker is not supported by browser.");
+      }
+    </script>
   </body>
 </html>
