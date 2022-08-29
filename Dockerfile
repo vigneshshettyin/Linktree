@@ -21,15 +21,6 @@ ENV REACT_APP_SUB_TITLE="Associate Software Engineer @ Clarivate"
 ENV REACT_APP_SOCIAL_LINKS="https://github.com/vigneshshettyin,https://linkedin.com/in/vigneshshettyin,https://twitter.com/vigneshshettyin,https://instagram.com/vigneshshettyin,https://hashnode.com/@vigneshshettyin"
 ENV REACT_APP_LINKS="https://go.vigneshcodes.in/meetly,Meetly - Conferencing App+https://go.vigneshcodes.in/certify,Certify - Certification App+https://eurl.tech,EatMyUrl - Free URL Shortener"
 
+EXPOSE 3000
 
-#7. Get the optimized build of react app
-RUN yarn run build
-
-#8. Base Image
-FROM nginx:1.21.6-alpine
-
-#9. Get the ngnix configurations
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-
-#10. Copy the build folder of the react-app to ngnix HTML directory
-COPY --from=build /react-app/build /usr/share/nginx/html
+CMD ["yarn", "start"]
