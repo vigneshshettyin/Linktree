@@ -6,6 +6,9 @@ import { useContext } from "react";
 const Footer = () => {
   const a = useContext(themeContext);
 
+  const FooterSocialLinks =
+    process.env.REACT_APP_SOCIAL_LINKS.split(",") || socialLinks;
+
   const footerSocialLinkColor = () => {
     if (a.darkMode) return themeData.dark.footerSocialLinkColor;
     else return themeData.light.footerSocialLinkColor;
@@ -20,10 +23,10 @@ const Footer = () => {
 
   return (
     <>
-      <div className="bottom">
+      <div className="bottom fixed-bottom">
         <hr />
         <FooterContainer>
-          {socialLinks.map((link, index) => {
+          {FooterSocialLinks.map((link, index) => {
             return (
               <FooterContent key={index}>
                 <SocialIcon

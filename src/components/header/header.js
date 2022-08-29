@@ -16,17 +16,21 @@ const Header = () => {
     document.body.style.backgroundColor = themeData.light.backgroundColor;
   }
 
+  const ProfileUserName = process.env.REACT_APP_USER_ID || userName;
+  const ProfilePhotoLink = process.env.REACT_APP_IMAGE || photoLink;
+  const ProfileDesc = process.env.REACT_APP_SUB_TITLE || desc;
+
   return (
     <>
       <DarkMode onChange={a.setDarkMode} checked={a.darkMode} size={50} />
       <Zoom>
         <HeaderWrapper>
-          <CustomImage effect="blur" src={photoLink} />
+          <CustomImage effect="blur" src={ProfilePhotoLink} />
           <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
-            @{userName}
+            @{ProfileUserName}
           </UserNameText>
           <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
-            {desc}
+            {ProfileDesc}
           </UserNameText>
         </HeaderWrapper>
       </Zoom>

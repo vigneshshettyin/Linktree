@@ -1,14 +1,15 @@
 const socialLinks = [
-  "https://github.com/vigneshshettyin",
-  "https://linkedin.com/in/vigneshshettyin",
-  "https://twitter.com/vigneshshettyin",
-  "https://instagram.com/vigneshshettyin",
-  "https://hashnode.com/@vigneshshettyin",
+  "https://github.com",
+  "https://linkedin.com",
+  "https://twitter.com",
+  "https://instagram.com",
+  "https://hashnode.com",
 ];
 const profileData = {
-  userName: "vigneshshettyin",
-  photoLink: "https://github.com/vigneshshettyin.png",
-  desc: "Tech Geek | Mentor @ DeltaSJEC",
+  userName: "johndoe",
+  photoLink:
+    "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200",
+  desc: "Linktree Architect",
 };
 
 const themeData = {
@@ -35,56 +36,16 @@ const themeData = {
 };
 const linkData = [
   {
-    link: "https://go.vigneshcodes.in/meetly",
-    name: "Meetly - Conferencing App",
+    name: "github",
+    link: "https://github.com",
   },
   {
-    link: "https://go.vigneshcodes.in/certify",
-    name: "Certify - Certification App",
+    name: "linkedin",
+    link: "https://linkedin.com",
   },
   {
-    link: "https://eurl.tech",
-    name: "EatMyUrl - Free URL Shortener",
-  },
-  {
-    link: "https://go.vigneshcodes.in/bulkmailer",
-    name: "BulkMailer - Free Bulk Mailer App",
-  },
-  {
-    link: "https://tesla-clone-6820b.web.app",
-    name: "Tesla UI Clone Using ReactJS",
-  },
-  {
-    link: "https://web-scrapper-v2.herokuapp.com",
-    name: "Free S.E.O Scrapper / API",
-  },
-  {
-    link: "https://fervent-cray-ead198.netlify.app",
-    name: "Free Blogging Application",
-  },
-  {
-    link: "https://vignesh-blog.herokuapp.com",
-    name: "Free Blogging Application",
-  },
-  {
-    link: "https://quizzical-pike-e7098a.netlify.app",
-    name: "Open-Source React",
-  },
-  {
-    link: "https://linktree.vigneshcodes.in",
-    name: "Display Links Uniquely ",
-  },
-  {
-    link: "https://blog.vigneshcodes.in/quick-guide-to-deploy-using-docker",
-    name: "Quick Guide To Deploy Using Docker",
-  },
-  {
-    link: "https://blog.vigneshcodes.in/create-linktree-clone",
-    name: "Create Linktree Clone",
-  },
-  {
-    link: "https://blog.vigneshcodes.in/docker-for-production-build",
-    name: "Docker For Production Build",
+    name: "twitter",
+    link: "https://twitter.com",
   },
 ];
 

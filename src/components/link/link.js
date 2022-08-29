@@ -8,12 +8,28 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Link = () => {
   const a = useContext(themeContext);
 
+  const convertLinkFormat = (data) => {
+    let formateDataList = [];
+    let dataList = data.split("+");
+    dataList.forEach((data) => {
+      let dataList = data.split(",");
+      formateDataList.push({
+        link: dataList[0],
+        name: dataList[1],
+      });
+    });
+    return formateDataList;
+  };
+
+  const EnvLinkData =
+    convertLinkFormat(process.env.REACT_APP_LINKS) || linkData;
+
   return (
     <>
       <Bounce>
         <ParentWrapper>
-          console.log(process.env.REACT_APP_LINKS)
-          {linkData.map((item, index) => (
+          {console.log(process.env.REACT_APP_LINKS)}
+          {EnvLinkData.map((item, index) => (
             <CustomDiv
               className="shadow"
               props={a.darkMode ? themeData.light : themeData.dark}
