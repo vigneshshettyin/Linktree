@@ -37,3 +37,5 @@ COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 
 #10. Copy the build folder of the react-app to ngnix HTML directory
 COPY --from=build /react-app/build /usr/share/nginx/html
+
+EXPOSE 80
