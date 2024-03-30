@@ -8,7 +8,9 @@ const socialLinks = [
 const profileData = {
   userName: "vigneshshettyin",
   photoLink: "https://github.com/vigneshshettyin.png",
-  desc: "Tech Geek | Mentor @ DeltaSJEC",
+  desc: "Software Engineer | Full Stack Developer | Open Source Contributor",
+  about:
+    "Unlock unprecedented speed and reliability with a backend wizard renowned for transforming sluggish query response times into lightning-fast results. Let's team up and revolutionize your backend operations with unparalleled efficiency and performance optimization.",
 };
 
 const themeData = {
@@ -36,94 +38,75 @@ const themeData = {
 const linkData = [
   {
     id: 1,
-    link: "https://go.vigneshcodes.in/meetly",
+    link: "https://play.google.com/store/apps/details?id=com.vs.meetly&hl=en_IN&gl=US",
     name: "Meetly - Conferencing App",
-    image:
-      "https://github.com/vigneshshettyin.png",
+    image: "https://cdn.vshetty.dev/DevResume/meetly.webp",
   },
   {
     id: 2,
-    link: "https://go.vigneshcodes.in/certify",
-    name: "Certify - Certification App",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    link: "https://github.com/vigneshshettyin/Flask-Generate-Certificate",
+    name: "Certify - Certificate Generator App",
+    image: "https://cdn.vshetty.dev/DevResume/certify.png",
   },
   {
     id: 3,
-    link: "https://eurl.tech",
-    name: "EatMyUrl - Free URL Shortener",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    link: "https://github.com/vigneshshettyin/EatMyURL",
+    name: "EatMyUrl - A URL Shortener App",
+    image: "https://cdn.vshetty.dev/DevResume/project.gif",
   },
   {
     id: 4,
-    link: "https://go.vigneshcodes.in/bulkmailer",
+    link: "https://github.com/vigneshshettyin/Bulk-Mailer",
     name: "BulkMailer - Free Bulk Mailer App",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    image: "https://cdn.vshetty.dev/DevResume/project.gif",
   },
   {
     id: 5,
     link: "https://tesla-clone-6820b.web.app",
-    name: "Tesla UI Clone Using ReactJS",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    name: "Tesla UI Clone Using React.JS",
+    image: "https://cdn.vshetty.dev/DevResume/project.gif",
   },
   {
     id: 6,
-    link: "https://web-scrapper-v2.herokuapp.com",
-    name: "Free S.E.O Scrapper / API",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    link: "https://github.com/vigneshshettyin/Web-Scraper",
+    name: "Flask S.E.O Scrapper / API",
+    image: "https://cdn.vshetty.dev/DevResume/project.gif",
   },
   {
     id: 7,
     link: "https://fervent-cray-ead198.netlify.app",
-    name: "Free Blogging Application",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    name: "Python Flask - Blogging Application",
+    image: "https://cdn.vshetty.dev/DevResume/project.gif",
   },
   {
     id: 8,
-    link: "https://vignesh-blog.herokuapp.com",
-    name: "Free Blogging Application",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    link: "https://github.com/vigneshshettyin/RestFul-Blog",
+    name: "MERN - Blogging Application",
+    image: "https://cdn.vshetty.dev/DevResume/project.gif",
   },
   {
     id: 9,
     link: "https://quizzical-pike-e7098a.netlify.app",
-    name: "Open-Source React",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    name: "Minified React Apps",
+    image: "https://cdn.vshetty.dev/DevResume/project.gif",
   },
   {
     id: 10,
-    link: "https://linktree.vigneshcodes.in",
-    name: "Display Links Uniquely ",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    link: "https://blogs.vshetty.dev/quick-guide-to-deploy-using-docker",
+    name: "Quick Guide To Deploy Using Docker",
+    image: "https://cdn.vshetty.dev/DevResume/blog.png",
   },
   {
     id: 11,
-    link: "https://blog.vigneshcodes.in/quick-guide-to-deploy-using-docker",
-    name: "Quick Guide To Deploy Using Docker",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
-  },
-    {
-    id: 12,
-    link: "https://blog.vigneshcodes.in/create-linktree-clone",
+    link: "https://blogs.vshetty.dev/create-linktree-clone",
     name: "Create Linktree Clone",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    image: "https://cdn.vshetty.dev/DevResume/blog.png",
   },
   {
-    id: 13,
-    link: "https://blog.vigneshcodes.in/docker-for-production-build",
+    id: 12,
+    link: "https://blogs.vshetty.dev/docker-for-production-build",
     name: "Docker For Production Build",
-    image:
-      "https://play-lh.googleusercontent.com/QYc9QNf0_c-M7rhF4eo8daWbIRg_ukwzabR3Xj9TX_6zxG-AbzhKF5NS3CAd2X79fm0=s360-rw",
+    image: "https://cdn.vshetty.dev/DevResume/blog.png",
   },
 ];
 

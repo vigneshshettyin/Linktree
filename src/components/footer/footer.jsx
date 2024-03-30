@@ -53,6 +53,7 @@ const FooterContainer = styled.div`
 const FooterContent = styled.div`
   margin: 5px;
   :hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
   }
 `;

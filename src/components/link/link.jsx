@@ -14,6 +14,7 @@ const Link = () => {
         <ParentWrapper>
           {linkData.map((item, index) => (
             <CustomDiv
+              id="divHoverExpand"
               className="shadow"
               props={a.darkMode ? themeData.light : themeData.dark}
               onClick={() => {
@@ -23,8 +24,9 @@ const Link = () => {
             >
               <LazyLoadImage
                 id="image"
+                draggable={false}
                 effect="blur"
-                src={`https://ui-avatars.com/api/?rounded=true&name=${item.name}&background=random`}
+                src={item.image}
                 alt="my_profile_image"
               />
               <p className="text-center">{item.name}</p>
@@ -39,35 +41,38 @@ const Link = () => {
 export default Link;
 
 const CustomDiv = styled.div`
+  font-weight: 400;
   margin-bottom: 15px;
   border-radius: 15px;
   cursor: pointer;
-  align-content: center;
   align-items: baseline;
   justify-content: center;
-  width: 40vw;
+  width: 30vw;
   padding: 5px;
   background-color: ${(props) => props.props.cardBackgroundColor};
   display: flex;
-  height: max-content;
   color: ${(props) => props.props.CardtextColor};
+  :hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
   @media (max-width: 768px) {
     width: 90vw;
     text-align: center;
   }
-  :hover {
-    background-color: ${(props) => props.props.onHoverBackgroundColor};
-    color: ${(props) => props.props.onHoverTextColor};
-    transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
-  }
   p {
     flex: 1;
+    justify-content: space-between;
   }
   #image {
     margin-left: 10px;
-    width: 50px;
+    width: auto;
     height: 50px;
+    width: auto;
+    :hover {
+      transform: scale(1.05);
+      transition: all 0.2s ease-in-out;
+    }
   }
 `;
 

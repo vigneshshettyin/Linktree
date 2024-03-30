@@ -9,7 +9,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Header = () => {
   const a = useContext(themeContext);
-  const { userName, photoLink, desc } = profileData;
+  const { userName, photoLink, desc, about } = profileData;
   if (!a.darkMode) {
     document.body.style.backgroundColor = themeData.dark.backgroundColor;
   } else {
@@ -21,13 +21,16 @@ const Header = () => {
       <DarkMode onChange={a.setDarkMode} checked={a.darkMode} size={50} />
       <Zoom>
         <HeaderWrapper>
-          <CustomImage effect="blur" src={photoLink} />
+          <CustomImage draggable={false} effect="blur" src={photoLink} />
           <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
             @{userName}
           </UserNameText>
           <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
             {desc}
           </UserNameText>
+          <TextWrapPara props={a.darkMode ? themeData.light : themeData.dark}>
+            {about}
+          </TextWrapPara>
         </HeaderWrapper>
       </Zoom>
     </>
@@ -44,6 +47,7 @@ const DarkMode = styled(DarkModeToggle)`
 `;
 
 const HeaderWrapper = styled.div`
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,4 +65,14 @@ const UserNameText = styled.h6`
   color: ${(props) => props.props.headerFontColor};
   font-weight: bold;
   text-align: center;
+`;
+
+const TextWrapPara = styled.p`
+  color: ${(props) => props.props.headerFontColor};
+  margin: 10px;
+  text-align: center;
+  width: 50vw;
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 `;
