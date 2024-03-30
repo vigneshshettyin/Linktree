@@ -16,7 +16,8 @@
     "react-lazy-load-image-component": "^1.6.0",
     "react-reveal": "^1.2.2",
     "react-social-icons": "^6.10.0",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.0.0",
+    "stylis": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
