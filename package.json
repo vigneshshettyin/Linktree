@@ -14,7 +14,6 @@
     "react-dark-mode-toggle": "^0.2.0",
     "react-dom": "^18.2.0",
     "react-lazy-load-image-component": "^1.6.0",
-    "react-reveal": "^1.2.2",
     "react-social-icons": "^6.15.0",
     "styled-components": "^6.1.8"
   },
@@ -27,8 +26,5 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.1.0"
-  },
-  "resolutions": {
-    "styled-components": "^5"
   }
 }
