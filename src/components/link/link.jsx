@@ -1,4 +1,3 @@
-import { Bounce } from "react-reveal";
 import styled from "styled-components";
 import { linkData, themeData } from "../../data/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -10,30 +9,28 @@ const Link = () => {
 
   return (
     <>
-      <Bounce>
-        <ParentWrapper>
-          {linkData.map((item, index) => (
-            <CustomDiv
-              id="divHoverExpand"
-              className="shadow"
-              props={a.darkMode ? themeData.light : themeData.dark}
-              onClick={() => {
-                window.open(item.link, "_blank");
-              }}
-              key={index}
-            >
-              <LazyLoadImage
-                id="image"
-                draggable={false}
-                effect="blur"
-                src={item.image}
-                alt="my_profile_image"
-              />
-              <p className="text-center">{item.name}</p>
-            </CustomDiv>
-          ))}
-        </ParentWrapper>
-      </Bounce>
+      <ParentWrapper>
+        {linkData.map((item, index) => (
+          <CustomDiv
+            id="divHoverExpand"
+            className="shadow"
+            props={a.darkMode ? themeData.light : themeData.dark}
+            onClick={() => {
+              window.open(item.link, "_blank");
+            }}
+            key={index}
+          >
+            <LazyLoadImage
+              id="image"
+              draggable={false}
+              effect="blur"
+              src={item.image}
+              alt="my_profile_image"
+            />
+            <p className="text-center">{item.name}</p>
+          </CustomDiv>
+        ))}
+      </ParentWrapper>
     </>
   );
 };
