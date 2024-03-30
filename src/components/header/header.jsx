@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import styled from "styled-components";
+import { Zoom } from "react-reveal";
 import { profileData, themeData } from "../../data/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import DarkModeToggle from "react-dark-mode-toggle";
@@ -18,18 +19,20 @@ const Header = () => {
   return (
     <>
       <DarkMode onChange={a.setDarkMode} checked={a.darkMode} size={50} />
-      <HeaderWrapper>
-        <CustomImage draggable={false} effect="blur" src={photoLink} />
-        <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
-          @{userName}
-        </UserNameText>
-        <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
-          {desc}
-        </UserNameText>
-        <TextWrapPara props={a.darkMode ? themeData.light : themeData.dark}>
-          {about}
-        </TextWrapPara>
-      </HeaderWrapper>
+      <Zoom>
+        <HeaderWrapper>
+          <CustomImage draggable={false} effect="blur" src={photoLink} />
+          <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
+            @{userName}
+          </UserNameText>
+          <UserNameText props={a.darkMode ? themeData.light : themeData.dark}>
+            {desc}
+          </UserNameText>
+          <TextWrapPara props={a.darkMode ? themeData.light : themeData.dark}>
+            {about}
+          </TextWrapPara>
+        </HeaderWrapper>
+      </Zoom>
     </>
   );
 };
