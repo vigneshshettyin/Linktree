@@ -108,6 +108,12 @@ const linkData = [
     name: "Docker For Production Build",
     image: "https://cdn.vshetty.dev/DevResume/blog.png",
   },
+    {
+    id: 13,
+    link: "https://blogs.vshetty.dev/clickhouse-decoded-high-cardinality-use-case",
+    name: "ClickHouse Decoded: High Cardinality Use case",
+    image: "https://cdn.vshetty.dev/DevResume/blog.png",
+  },
 ];
 
 export { socialLinks, profileData, linkData, themeData };
